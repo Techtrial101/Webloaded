@@ -4,7 +4,7 @@ const Home = () => {
             <h1
             style={{
                 color: "red",
-            }}>This is a hompage</h1>
+                }}>This is a hompage</h1>
             <p>Welcome to my page</p>
         </div>
     );
