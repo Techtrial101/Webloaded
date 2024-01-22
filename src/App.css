@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Rubik+Burned&display=swap');
+
 .navbar{
+    font-family: "Rubik Burned", system-ui;
+  font-weight: 400;
+  font-style: normal;
     font-size: large;
     font-weight: bold;
     text-align:center;
@@ -9,10 +14,9 @@
     border:  3px solid green;
     margin-left: 10%;
     padding: 1% 0% 1% 0%;
-    
-
 
 }
+
 .sidebar{
     color: black;
     font-size: large;
@@ -61,14 +65,15 @@
     text-align: center;
 
 }
+
 .home{
-    background-color: white;
-    width: 30em;
-    border:  3px solid rgb(17, 163, 14) ;
-    margin-left: 30%;
-    margin-top: 2%;
-    text-align: center;
+  font-family: "Rubik Burned", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  
 }
+
+
 .toggle{
   background-color:green;
   padding: 4px;
@@ -79,4 +84,36 @@
   border: 2;
   margin-top: 5%;
 
+}
+
+.creator{
+    font-family: 'Rubik Burned', system-ui;
+    font-weight: 400;
+    font-size: 1.2rem;
+     color: greenyellow;
+     margin: 0;
+     transform: rotate(35deg);
+     transition: transform 0.3s ease;
+}
+
+.creator:hover{
+    transform: rotate(35deg) scale(1.5);
+}
+
+.creator-preview{
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid greenyellow;
+    border: 2px solid green;
+}
+
+.creator-preview:hover{
+    box-shadow: 1px 3px 5px green(0,0,0,0,5);
+
+}
+
+.blog-preview h2{
+    font-size: 20px;
+    color: greenyellow;
+    margin-bottom: 8px;
 }
