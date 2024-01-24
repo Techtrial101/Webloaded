@@ -1,9 +1,10 @@
 import { GiSpiderWeb } from "react-icons/gi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Creatorlist from "./Components/Creatorlist";
 
 const Home = () => {
 
-    const [Creator, setCreator]= useState(
+    const [creator, setCreator]= useState(
         [
             {id:1, author: "Tom", title: "How to work"},
             {id:2,  author: "John", title: "Learning how to code" },
@@ -11,35 +12,33 @@ const Home = () => {
 
         ]
     );
+const[course, setCourse]= useState('open')
 
+    useEffect(()=>{
+        console.log('use effect ran')
+    },[course])
+
+    const handleDelete = (id) => {
+        console.log('The id of the clicked blog is', id)
+
+        const filteredCreators = creator.filter((creator, index)=> creator.id !== id)
+
+    setCreator(filteredCreators)
+    }
+
+    
     return (  
         <div classname="home">
             <h1
             style={{
                 color: "greenyellow",
         }}>Webloaded<GiSpiderWeb /></h1>
+<Creatorlist creator={creator} handleDelete={handleDelete}/>
+<button onClick={()=>setCourse('close')}>click to change course </button>
 
-        {Creator.map(( creator,index)=>(
-            <div className="creator-preview" key={creator.id}>
-                <h2> Title is {creator.title}</h2>
-                <p>written by {creator.author}</p>
-
-                </div>
-        
-
-        ))}
-
-                
- 
-
-
-
-            </div>
-                
-                
-            
-    
-    );
+<p>{course}</p>
+</div>
+ );
 }
  
 export default Home;

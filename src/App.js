@@ -7,6 +7,7 @@ import Toggle from './Toggle';
 
 
 
+
 function App() {
   const explore = () => {
     console.log("The user hovered over the element")
@@ -32,9 +33,6 @@ function App() {
       <Sidebar/>
       <BlogDetail/>
       <Toggle/>
-      
-      
-      
   
     </div>
   );
