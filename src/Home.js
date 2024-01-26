@@ -4,19 +4,21 @@ import Creatorlist from "./Components/Creatorlist";
 
 const Home = () => {
 
-    const [creator, setCreator]= useState(
-        [
-            {id:1, author: "Tom", title: "How to work"},
-            {id:2,  author: "John", title: "Learning how to code" },
-            {id:3,  author: "Andrew", title: "Achieving your goals"},
+    const [creator, setCreator]= useState(null);
 
-        ]
-    );
-const[course, setCourse]= useState('open')
+const[course, setCourse]= useState('open');
 
     useEffect(()=>{
-        console.log('use effect ran')
-    },[course])
+        fetch('http://localhost:8000/creators')
+        .then ((Response)=>{
+         return Response.json()
+        })
+        .then((creatorArray)=>{
+            console.log(creatorArray)
+            setCreator(creatorArray)
+
+        })
+    },[]);
 
     const handleDelete = (id) => {
         console.log('The id of the clicked blog is', id)
@@ -33,8 +35,8 @@ const[course, setCourse]= useState('open')
             style={{
                 color: "greenyellow",
         }}>Webloaded<GiSpiderWeb /></h1>
-<Creatorlist creator={creator} handleDelete={handleDelete}/>
-<button onClick={()=>setCourse('close')}>click to change course </button>
+{creator && <Creatorlist creator={creator} handleDelete={handleDelete}/>}
+<button onClick={()=>setCourse('close')}>click to change course </button> 
 
 <p>{course}</p>
 </div>
