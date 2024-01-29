@@ -5,37 +5,42 @@ import Creatorlist from "./Components/Creatorlist";
 const Home = () => {
 
     const [creator, setCreator]= useState(null);
+    const[error, setError]= useState(null);
+    const[loading, setLoading]=useState(true);
 
 const[course, setCourse]= useState('open');
 
     useEffect(()=>{
+      setTimeout(()=>{
         fetch('http://localhost:8000/creators')
         .then ((Response)=>{
+            if(!Response.ok){
+                throw Error('server is busy. Please try again')
+            }
          return Response.json()
         })
-        .then((creatorArray)=>{
-            console.log(creatorArray)
-            setCreator(creatorArray)
-
+        .then((creator)=>{
+        setCreator(creator)
+        setLoading(false)
         })
-    },[]);
+        .catch((err)=>{
+        console.log(err.messsage)
+        setError(err.message)
+        setLoading(false)
+    })
+      },1000)
 
-    const handleDelete = (id) => {
-        console.log('The id of the clicked blog is', id)
+},[]);
 
-        const filteredCreators = creator.filter((creator, index)=> creator.id !== id)
-
-    setCreator(filteredCreators)
-    }
-
-    
     return (  
         <div classname="home">
             <h1
             style={{
                 color: "greenyellow",
         }}>Webloaded<GiSpiderWeb /></h1>
-{creator && <Creatorlist creator={creator} handleDelete={handleDelete}/>}
+         {loading && <div>Your item is being fetched</div>}
+        {error && <div>{error}</div>}
+       {creator && <Creatorlist creator={creator}/>}
 <button onClick={()=>setCourse('close')}>click to change course </button> 
 
 <p>{course}</p>
