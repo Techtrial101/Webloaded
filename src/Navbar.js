@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -11,10 +12,9 @@ function handleClick(){
     return (  
         <div className="navbar">
             <h1 onClick={handleClick}>My Blog Page{count}</h1>
-            <a href="/">home</a> <br></br>
-            <a href="/create">New blog</a><br></br>
-            <a href="/create">Back</a><br></br>
-            <a href="https://google.com">google</a><br></br>
+            <Link to="/">home</Link><br></br>
+            <Link to="/">Back</Link><br></br>
+            
 
             
         

@@ -1,36 +1,13 @@
 import { GiSpiderWeb } from "react-icons/gi";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Creatorlist from "./Components/Creatorlist";
+import useFetch from "./hooks/use-fetch";
 
 const Home = () => {
 
-    const [creator, setCreator]= useState(null);
-    const[error, setError]= useState(null);
-    const[loading, setLoading]=useState(true);
-
 const[course, setCourse]= useState('open');
 
-    useEffect(()=>{
-      setTimeout(()=>{
-        fetch('http://localhost:8000/creators')
-        .then ((Response)=>{
-            if(!Response.ok){
-                throw Error('server is busy. Please try again')
-            }
-         return Response.json()
-        })
-        .then((creator)=>{
-        setCreator(creator)
-        setLoading(false)
-        })
-        .catch((err)=>{
-        console.log(err.messsage)
-        setError(err.message)
-        setLoading(false)
-    })
-      },1000)
-
-},[]);
+const {creator, error,loading} = useFetch('http://localhost:8000/creators')
 
     return (  
         <div classname="home">
