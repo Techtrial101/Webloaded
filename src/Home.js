@@ -11,7 +11,7 @@ const {creator, error,loading} = useFetch('http://localhost:8000/creators')
 
     return (  
         <div classname="Home">
-            <h1
+        <h1
             style={{
                 color: "greenyellow",
         }}>Webloaded<GiSpiderWeb /></h1>
@@ -22,6 +22,7 @@ const {creator, error,loading} = useFetch('http://localhost:8000/creators')
 
 <p>{course}</p>
 </div>
+
  );
 }
  
