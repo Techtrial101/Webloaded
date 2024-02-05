@@ -1,45 +1,29 @@
 import { GiSpiderWeb } from "react-icons/gi";
 import { useState } from "react";
+import Creatorlist from "./Components/Creatorlist";
+import useFetch from "./hooks/use-fetch";
 
 const Home = () => {
 
-    const [Creator, setCreator]= useState(
-        [
-            {id:1, author: "Tom", title: "How to work"},
-            {id:2,  author: "John", title: "Learning how to code" },
-            {id:3,  author: "Andrew", title: "Achieving your goals"},
+const[course, setCourse]= useState('open');
 
-        ]
-    );
+const {creator, error,loading} = useFetch('http://localhost:8000/creators')
 
     return (  
-        <div classname="home">
-            <h1
+        <div classname="Home">
+        <h1
             style={{
                 color: "greenyellow",
         }}>Webloaded<GiSpiderWeb /></h1>
+         {loading && <div>Your item is being fetched</div>}
+        {error && <div>{error}</div>}
+       {creator && <Creatorlist creator={creator}/>}
+<button onClick={()=>setCourse('close')}>click to change course </button> 
 
-        {Creator.map(( creator,index)=>(
-            <div className="creator-preview" key={creator.id}>
-                <h2> Title is {creator.title}</h2>
-                <p>written by {creator.author}</p>
+<p>{course}</p>
+</div>
 
-                </div>
-        
-
-        ))}
-
-                
- 
-
-
-
-            </div>
-                
-                
-            
-    
-    );
+ );
 }
  
 export default Home;
