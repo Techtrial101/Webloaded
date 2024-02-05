@@ -1,6 +1,6 @@
 const Create = () => {
     return (
-        <div className="new">
+        <div className="create">
             <h2 style={{textAlign: "center"}}>Add a new blog</h2>
 
          <form>

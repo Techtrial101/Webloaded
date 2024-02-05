@@ -5,7 +5,7 @@ const useFetch =(URL)=>{
     const [creator, setCreator]= useState(null);
     const[error, setError]= useState(null);
     const[loading, setLoading]=useState(true);
-
+   
     useEffect(()=>{
         setTimeout(()=>{
           fetch(URL)
@@ -24,9 +24,9 @@ const useFetch =(URL)=>{
           setError(err.message)
           setLoading(false)
       })
-        },1000)
+        },1000);
   
-  },);
+  },[URL]);
 
   return {creator,error,loading}
 

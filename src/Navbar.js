@@ -14,6 +14,7 @@ function handleClick(){
             <h1 onClick={handleClick}>My Blog Page{count}</h1>
             <Link to="/">home</Link><br></br>
             <Link to="/">Back</Link><br></br>
+            <Link to="/create">Add blog</Link>
             
 
             

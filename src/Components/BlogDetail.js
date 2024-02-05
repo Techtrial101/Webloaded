@@ -5,7 +5,7 @@ import useFetch from "../hooks/use-fetch";
 const BlogDetail = () => {
     const {id} = useParams();
 
-    const {creators: creator, error, loading}= useFetch (`http://localhost:8000/creators/${id}`);
+    const {creator, error, loading}= useFetch (`http://localhost:8000/creators/${id}`);
 
   
     return ( 
@@ -21,7 +21,7 @@ const BlogDetail = () => {
             <div>{creator.body}</div>
             </article>)}
 
-            <div className="article-body">
+            <div className="creator-body">
 
             </div>
 
