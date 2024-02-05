@@ -11,7 +11,7 @@
     background-color: white;
     width: 20em;
     height: 10em;
-    border:  2px solid green;
+    border:  3px solid green;
     margin-left: 10%;
     padding: 1% 0% 1% 0%;
 
@@ -26,7 +26,7 @@
     background-color: white;
     width: 20em;
     height: 9em;
-    border:  2px solid rgb(21, 229, 59) ;
+    border:  3px solid rgb(21, 229, 59) ;
     margin-left: 10%;
     margin-top: 2%;
     padding: 1% 0% 1% 0%;
@@ -39,7 +39,7 @@
     margin-top: 0%;
     background-color:white;
     width: 20em;
-    border:  2px solid rgb(32, 158, 45) ;
+    border:  3px solid rgb(32, 158, 45) ;
     margin-left: 1%;
     margin-top: 2%;
     
@@ -51,25 +51,27 @@
     margin-top: 0%;
     background-color:white;
     width: 20em;
-    border:  2px solid rgb(32, 184, 62);
+    border:  3px solid rgb(32, 184, 62);
     margin-left: 1%;
     margin-top: 10%;
 
 }
-
-.home{
-    font-family: "Rubik Burned", system-ui;
-    font-weight: 400;
-    font-style: normal;
+.blogdetail{
     background-color: white;
     width: 30em;
-    border:  2px solid rgb(17, 163, 14) ;
+    border:  3px solid rgb(17, 163, 14) ;
     margin-left: 50%;
     margin-top: -30%;
     text-align: center;
-    
-  }
+
+}
+
+.home{
+  font-family: "Rubik Burned", system-ui;
+  font-weight: 400;
+  font-style: normal;
   
+}
 
 
 .toggle{
@@ -79,7 +81,7 @@
   font-size: 10px;
   width:fit-content;
   margin-left: 65%;
-  border: 2px ;
+  border: 2;
   margin-top: 5%;
 
 }
@@ -89,96 +91,29 @@
     font-weight: 400;
     font-size: 1.2rem;
      color: greenyellow;
-     border: 2px solid; 
-     padding: 2rem;
      margin: 0;
      transform: rotate(35deg);
-     line-height: 3rem;
      transition: transform 0.3s ease;
-    
 }
 
 .creator:hover{
     transform: rotate(35deg) scale(1.5);
 }
 
-.creator-preview {
-    padding: 0.5rem;
-    margin: 5px 0;
+.creator-preview{
+    padding: 10px 16px;
+    margin: 20px 0;
     border-bottom: 1px solid greenyellow;
     border: 2px solid green;
-    color: greenyellow;
-    text-align:justify;
-    text-decoration: none;
-    width:10cm;
-    
-    
 }
 
-.creator-preview a{
-    text-decoration: none;
-}
-
-.creators-preview:hover{
+.creator-preview:hover{
     box-shadow: 1px 3px 5px green(0,0,0,0,5);
 
 }
 
-
-
-.blogdetail  { 
-    background-color: white;
-    width: 30em;
-    text-align: center;
-    margin: 1rem;
-    color: blueviolet;
-    font-size: 1rem;
-    border: 2px solid greenyellow;
-    padding: 2rem;
-    line-height: 2rem;
-    }
-    
-   
-
-.create{
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    margin: 1rem;
-}
-
-.create label{
-    text-align: left;
-    display: block;
-}
-
-.create h2{
+.creator-preview h2{
     font-size: 20px;
-    color: green;
-    margin-bottom: 20px;
-}
-
-.create input, .create textarea, .create select{
-    width: 100%;
-    padding: 6px 10px;
-    margin: 10px 0;
-    border: 1px solid green;
-    box-sizing: border-box;
-    display: block;
-    border-radius: 5px;
-}
-
-.create button{
-    background: greenyellow;
-    color: #fff;
-    border: 0;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-
-}
-
-.creator button:hover{
-    filter: invert(100%);
+    color: greenyellow;
+    margin-bottom: 8px;
 }

@@ -68,18 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### Assignment
-DRY, which stands for "Don't Repeat Yourself." It's all about avoiding duplication in your code. By reusing code and keeping things concise, you can make your code more maintainable and reduce the chances of introducing bugs. It's like decluttering your code and making it more efficient!
-
-YAGNI, which stands for "You Ain't Gonna Need It." This principle reminds us not to overcomplicate our code by adding unnecessary features or functionality. Instead, focus on what is currently needed and avoid adding extra complexity. It helps keep your code lean and prevents you from wasting time on things that might not be useful in the end.
-
-SOLID is an acronym that represents five principles of object-oriented design. Each letter stands for a different principle, but I'll give you a brief overview. These principles help make your code more modular, flexible, and easier to maintain.
-
-S - Single Responsibility Principle: Each class or module should have a single responsibility.
-O - Open/Closed Principle: Software entities should be open for extension but closed for modification.
-L - Liskov Substitution Principle: Subtypes should be substitutable for their base types.
-I - Interface Segregation Principle: Clients should not be forced to depend on interfaces they don't use.
-D - Dependency Inversion Principle: High-level modules should not depend on low-level modules; both should depend on abstractions.
-
-These principles help promote good design practices and make your code more robust.
