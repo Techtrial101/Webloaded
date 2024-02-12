@@ -9,8 +9,10 @@ const[course, setCourse]= useState('open');
 
 const {creator, error,loading} = useFetch('http://localhost:8000/creators')
 
+//const confidential = process.env.REACT_API
+
     return (  
-        <div classname="Home">
+        <div className="Home">
         <h1
             style={{
                 color: "greenyellow",

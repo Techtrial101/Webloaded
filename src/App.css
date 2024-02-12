@@ -1,21 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Rubik+Burned&display=swap');
 
-.navbar{
-    font-family: "Rubik Burned", system-ui;
+.navbar {
+  font-family: "Rubik Burned", system-ui;
   font-weight: 400;
   font-style: normal;
     font-size: large;
     font-weight: bold;
-    text-align:center;
-    margin-top: 0%;
-    background-color: white;
-    width: 20em;
-    height: 10em;
-    border:  2px solid green;
-    margin-left: 10%;
-    padding: 1% 0% 1% 0%;
+    text-align: left;
+    margin-left: 50%;
+    margin-top: -130%;
+    padding-left: 5%;
+	line-height: 1em;
+    text-decoration: none;
+
+
 
 }
+
+.navbar p{
+    word-spacing: 0.5rem;
+    text-decoration: none;
+
+}
+
+.logo{
+    width: 30px;
+}
+
+
 
 .sidebar{
     color: black;
@@ -95,6 +107,7 @@
      transform: rotate(35deg);
      line-height: 3rem;
      transition: transform 0.3s ease;
+     
     
 }
 
@@ -138,6 +151,7 @@
     line-height: 2rem;
     }
     
+   
    
 
 .create{

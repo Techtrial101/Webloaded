@@ -1,8 +1,8 @@
 import Navbar from './Navbar';
 import './App.css';
 import Home from './Home';
-import Sidebar from './Sidebar';
-import Toggle from './Toggle';
+//import Sidebar from './Sidebar';
+//import Toggle from './Toggle';
 import { Routes, Route } from 'react-router-dom';
 import Create from './Components/create';
 import NotFound from './Components/not-found';
@@ -18,14 +18,7 @@ function App() {
 
   // use event listener to listen to event
 
-  const handlekeypress = (e) => { 
-    console.log('e')
-    console.log(e.key)
-    if (e.key === 'r') console.log('the user pressed the r key')
-  }
   
-  window.addEventListener( 'keydown', handlekeypress)
-
 
   return (
     <div className="App">
@@ -35,13 +28,13 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/create' element={<Create/>} />
         <Route path='*' element={<NotFound />}/>
+        <Route path="/edit/:id" element={<Create/>}/>
         <Route path= "/creators/:id" element={<BlogDetail/>}/>
         </Routes>
 
       
         <Navbar/> 
-      <Sidebar/>
-      <Toggle/>
+    
     
   
     </div>

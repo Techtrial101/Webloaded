@@ -11,10 +11,13 @@ function handleClick(){
 }
     return (  
         <div className="navbar">
+            <img src="webl.png" alt="React Logo" className="logo"/>
             <h1 onClick={handleClick}>My Blog Page{count}</h1>
-            <Link to="/">home</Link><br></br>
-            <Link to="/">Back</Link><br></br>
-            <Link to="/create">Add blog</Link>
+            <p className="link">
+            <Link to="/"> home</Link>
+            <Link to="/"> Back</Link>
+            <Link to="/create"> Addblog</Link>
+            </p>
             
 
             

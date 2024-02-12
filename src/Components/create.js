@@ -1,17 +1,72 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Create = () => {
 
-    const {title, setTitle}= useState('');
-    const {author, setAuthor}= useState('');
-    const {body, setBody}= useState('');
+    const [title, setTitle]= useState('');
+    const [author, setAuthor]= useState('Tobi');
+    const [body, setBody]= useState('');
+    const [loading, setLoading] = useState(false);
 
-    const handleSubmit = ()=> {
-      console.log(title, author, body)  
+    const navigate = useNavigate()
+
+    const {id} = useParams();
+
+    useEffect(()=>{
+      if (id){
+        fetch(`http://localhost:8000/creators/${id}`)
+        .then((res)=>{
+          return res.json()
+          
+        })
+        .then((data)=>{
+          setTitle(data.title)
+          setAuthor(data.author)
+          setBody(data.body)
+        })
+      }
+      
+    }, [id])
+    
+    
+    const handleSubmit = (e) => {
+      setLoading(true)
+      e.preventDefault();
+
+      
+
+      setTimeout(()=>{
+        const newCreator = {title, author, body}
+
+      const postUrl ='http://localhost:8000/creators'
+      const putUrl = `http://localhost:8000/creators/${id}`
+
+      const resolvedUrl =  id ? putUrl : postUrl
+      
+
+      fetch(resolvedUrl, {
+        method: id ? 'PUT' : 'POST',
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(newCreator)
+      })
+      .then((res)=>{
+        res.json()
+        setLoading(false)
+        navigate('/')
+       
+      })
+      
+      .catch((err)=>{
+        console.log(err)
+      })
+      },3000)
+      
     }
     return (
         <div className="create">
-            <h2 style={{textAlign: "center"}}>Add a new blog</h2>
+            <h2 style={{textAlign: "center"}}>
+              {id ? `Edit blog number ${id}` : 'Add a new blog'}
+              </h2>
 
          <form onSubmit={handleSubmit}>
         <label>
@@ -34,7 +89,6 @@ const Create = () => {
         <option value="AyoOluwa">AyoOluwa</option>
         <option value="Emmanuel">Emmanuel</option>
         </select>
-        <input type="text" required/>
         </label>
 
         <label>
@@ -46,7 +100,10 @@ const Create = () => {
         ></textarea>
         </label>
 
-        <button type="submit">Submit a blog</button>
+         {!loading && <button type="submit">
+          {id ? `Update your blog` : 'Submit a blog'}
+          </button>}
+        {loading && <button type="submit" disabled>Posting your blog</button> }
          </form>
         </div>
       );
