@@ -80,7 +80,9 @@ const Create = () => {
         </label>
 
         <label>
+        
         creator author:
+      
         <select
         value={author}
         onChange={(e)=>setAuthor(e.target.value)}
@@ -88,6 +90,7 @@ const Create = () => {
         <option value="Tobi">Tobi</option>
         <option value="AyoOluwa">AyoOluwa</option>
         <option value="Emmanuel">Emmanuel</option>
+        <option value="John">John</option>
         </select>
         </label>
 

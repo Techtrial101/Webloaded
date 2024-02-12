@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <h1 onMouseEnter = {explore} >This is a component</h1>
-      
+      <Navbar/> 
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/create' element={<Create/>} />
@@ -33,7 +33,7 @@ function App() {
         </Routes>
 
       
-        <Navbar/> 
+        
     
     
   
