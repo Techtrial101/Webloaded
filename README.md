@@ -1,85 +1,200 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- TABLE OF CONTENTS -->
 
-## Available Scripts
+# 📗 Table of Contents
 
-In the project directory, you can run:
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Webloaded](#-Webloaded-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage ](#usage-)
+    - [Run tests ](#run-tests-)
+    - [Deployment ](#deployment-)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-### `npm start`
+<!-- PROJECT DESCRIPTION -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**[Webloaded](https://-test.vercel.app/)** is a web application for creating and sharing blogs. It is a platform where users can create, read, update, and delete blogs. It is built with React for the frontend and uses json server to serve the data to port 8000. The application is hosted on Vercel.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm test`
+### Tech Stack <a name="tech-stack"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVASCRIPT</li>
+    <li>React</li>
+  </ul>
+</details>
 
-### `npm run build`
+<!-- Features -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Key Features <a name="key-features"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **[Create Blogs]**
+- **Read Blog details**
+- **Update Blogs**
+- **[Delete Blogs]**
+- **Route Navigation**
+- **[Create React App]**
+- **[RESTFUL APIs]**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run eject`
+<!-- LIVE DEMO -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Live Demo <a name="live-demo"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### [Webloaded]()
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- GETTING STARTED -->
 
-## Learn More
+## 💻 Getting Started <a name="getting-started"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To get a local copy up and running, follow these steps.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In order to run this project you need:
 
-### Analyzing the Bundle Size
+<ul>
+    <li>The current version of node</li>
+    <li>To have Git installed on your local machine</li>
+    <li>Node Package manager (npm) </li>
+    <li>An editor such as Visual Studio Code</li>
+  </ul>
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Setup
 
-### Making a Progressive Web App
+Clone this repository to your desired folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<ul>
+    <li>Create your classic access token from github.com</li>
+    <li>run "git clone https://{access_token}@github.com/username/{repo_name}.git"</li>
+    <li>Update your git identity by running "git config --global user.email "your_email@gmail.com""</li>
+    <li>Update your name on git by running "git config --global user.name "your_name"</li>
+  </ul>
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+### Install
+```sh
+Install this project by running `npm install`
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Usage <a name="usage"></a>
 
-### Deployment
+To run the project, execute the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```sh
+  open the project in VS code and run two terminals for the codes below:
+  use `npm start` to start the application
+  use `npx json-server --watch data/db.json --port 8000` to start the json server
+```
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Run tests <a name="run-tests"></a>
 
-### Assignment
-DRY, which stands for "Don't Repeat Yourself." It's all about avoiding duplication in your code. By reusing code and keeping things concise, you can make your code more maintainable and reduce the chances of introducing bugs. It's like decluttering your code and making it more efficient!
+<!-- To run tests, run the following command:
 
-YAGNI, which stands for "You Ain't Gonna Need It." This principle reminds us not to overcomplicate our code by adding unnecessary features or functionality. Instead, focus on what is currently needed and avoid adding extra complexity. It helps keep your code lean and prevents you from wasting time on things that might not be useful in the end.
+```sh
+Run `npm run test`
+Run `npx stylelint "**/*.{css,scss}" --fix` to fix linters
+Run `npx eslint "**/*.{js,jsx}" --fix` to fix linters"
+``` -->
 
-SOLID is an acronym that represents five principles of object-oriented design. Each letter stands for a different principle, but I'll give you a brief overview. These principles help make your code more modular, flexible, and easier to maintain.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-S - Single Responsibility Principle: Each class or module should have a single responsibility.
-O - Open/Closed Principle: Software entities should be open for extension but closed for modification.
-L - Liskov Substitution Principle: Subtypes should be substitutable for their base types.
-I - Interface Segregation Principle: Clients should not be forced to depend on interfaces they don't use.
-D - Dependency Inversion Principle: High-level modules should not depend on low-level modules; both should depend on abstractions.
+### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
-These principles help promote good design practices and make your code more robust.
+You can deploy this project using:
+
+- github pages
+- netlify
+- vercel
+- heroku
+```sh
+- npm run deploy
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Author <a name="author"></a>
+
+👤 **Oluwatobiloba Onipede**
+
+- GitHub: [@githubhandle](https://github.com/Techtrial101)
+- Twitter: [@twitterhandle]https://twitter.com/hotdjrex
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/oluwatobiloba-onipede-a622272b4/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [x] **[contact form page for blog posters]**
+- [x] **[A feature for displaying the dates a blog was added]**
+- [x] **[A feature for adding comments to the blogs]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, kindly drop a star for me.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+We would like to use this medium to appreciate [SamFancy Compusolutions](#) & [Mr. DammyBest](#) for giving us this type of opportunity.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
