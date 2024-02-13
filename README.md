@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-**[Webloaded](https://-test.vercel.app/)** is a web application for creating and sharing blogs. It is a platform where users can create, read, update, and delete blogs. It is built with React for the frontend and uses json server to serve the data to port 8000. The application is hosted on Vercel.
+**[Webloaded](https://vercel.com/oluwatobiloba-ayodeji-onipedes-projects)** is a web application for creating and sharing blogs. It is a platform where users can create, read, update, and delete blogs. It is built with React for the frontend and uses json server to serve the data to port 8000. The application is hosted on Vercel.
 
 ## 🛠 Built With <a name="built-with"></a>
 

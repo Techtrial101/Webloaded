@@ -1,19 +1,18 @@
-import {useState} from "react";
+import { useState } from 'react';
+
 const Toggle = () => {
+  const [count, setCount] = useState('Click me');
 
-    const [ count, setCount,] = useState("Click me")
+  function handleClick() {
+    setCount('Thank you for clicking me');
+  }
 
-    function handleClick() {
-        console.log('This user clicked me')
-        setCount('Thank you for clicking me')
-    }
- 
-    return (  
-        <div className="toggle">
-<button onClick={handleClick}>{count}</button>
+  return (
+    <div className="toggle">
+      <button type="button" onClick={handleClick}>{count}</button>
 
-        </div>
-    );
-}
- 
+    </div>
+  );
+};
+
 export default Toggle;

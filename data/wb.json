@@ -4,61 +4,61 @@
       "title": "Law of physics",
       "author": "Micheal Faraday",
       "body": "This is my first creator post",
-      "id": 1
+      "id": "1"
     },
     {
       "title": "Mathematics",
       "author": "John fresco",
       "body": "This is my second creator post",
-      "id": 2
+      "id": "2"
     },
     {
       "title": "English",
       "author": "Elizabeth florish",
       "body": "This is my third creator post",
-      "id": 3
+      "id": "3"
     },
     {
       "title": "Biology",
       "author": "Paul Doe",
       "body": "This is my fourth creator post",
-      "id": 4
+      "id": "4"
     },
     {
       "title": "Computer Science",
       "author": "Damilare Isreal",
       "body": "This is my fifth creator post",
-      "id": 5
+      "id": "5"
     },
     {
       "title": "Business Admin",
       "body": "This is my sixth creator post",
       "author": "Yetunde Oloye",
-      "id": 6
+      "id": "6"
     },
     {
       "title": "Foreign Exchange",
       "author": "Olawale  Salami",
       "body": "This is my seventh creator post",
-      "id": 7
+      "id": "7"
     },
     {
       "title": "Anatomy",
       "author": "Ayomide Abiodun",
       "body": "This is my eighth creator post",
-      "id": 8
+      "id": "8"
     },
     {
       "title": "Transport Management",
       "author": "Tobi Gabriel",
       "body": "This is my ninth creator post",
-      "id": 9
+      "id": "9"
     },
     {
       "title": "Lab experiment",
       "author": "Dayo Ayodele",
       "body": "This is my tenth creator post",
-      "id": 10
+      "id": "10"
     }
   ]
 }
